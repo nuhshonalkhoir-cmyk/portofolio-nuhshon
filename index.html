@@ -1,471 +1,610 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nuhshon — Portofolio TKJ</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio | SMK TKJ Developer</title>
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Aurora UI + Eldoura UI Stylesheet -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- ─── AURORA BACKGROUND ─── -->
-<div class="aurora-bg">
+<!-- ============================================================
+     AURORA BACKGROUND
+     ============================================================ -->
+<div class="aurora-bg" aria-hidden="true">
   <div class="aurora-blob blob-1"></div>
   <div class="aurora-blob blob-2"></div>
   <div class="aurora-blob blob-3"></div>
   <div class="aurora-blob blob-4"></div>
 </div>
+<div class="aurora-grid" aria-hidden="true"></div>
 
-<!-- ─── NAVIGATION ─── -->
-<nav>
-  <div class="nav-logo">Nuhshon</div>
-  <ul class="nav-links">
-    <li><a href="#hero">Beranda</a></li>
-    <li><a href="#skills">Keahlian</a></li>
-    <li><a href="#projects">Proyek</a></li>
-    <li><a href="#certificates">Sertifikat</a></li>
-    <li><a href="#about">Tentang</a></li>
-  </ul>
-  <a href="#contact" class="nav-cta">Hubungi Saya</a>
-</nav>
+<!-- ============================================================
+     MAIN WRAPPER
+     ============================================================ -->
+<div class="wrapper">
 
-<main>
+  <!-- ─── NAVBAR ─── -->
+  <nav>
+    <div class="nav-logo">Nuhshon.dev</div>
+    <ul class="nav-links">
+      <li><a href="#about">Tentang</a></li>
+      <li><a href="#skills">Keahlian</a></li>
+      <li><a href="#projects">Proyek</a></li>
+      <li><a href="#certificates">Sertifikat</a></li>
+      <li><a href="#contact" class="nav-cta">Hubungi Saya</a></li>
+    </ul>
+  </nav>
 
-  <!-- ══════════════════════════════════════
+  <!-- ============================================================
        HERO SECTION
-  ══════════════════════════════════════════ -->
+       ============================================================ -->
   <section id="hero">
-    <div class="hero-text">
-      <div class="hero-badge">
-        <span></span> Tersedia untuk Kolaborasi &amp; Magang
+    <div class="hero-inner">
+
+      <!-- Avatar -->
+      <div class="hero-avatar">N</div>
+
+      <!-- Badge Row -->
+      <div class="hero-tag-row">
+        <span class="el-badge el-badge-aurora">✦ SMK TKJ</span>
+        <span class="el-badge el-badge-cyan">🌐 Web Developer</span>
+        <span class="el-badge el-badge-pink">⚡ Network Engineer</span>
       </div>
+
+      <!-- Nama -->
       <h1 class="hero-name">
-        Halo, Saya<br>
+        Halo, Saya <br>
         <span class="gradient-text">Nuhshon</span>
       </h1>
-      <p class="hero-subtitle">
-        Siswa <strong>SMK TKJ</strong> yang antusias di bidang
-        <strong>Jaringan Komputer</strong>, <strong>Web Development</strong>,
-        dan <strong>Keamanan Siber</strong>. Suka membangun hal-hal yang
-        berguna dan keren di dunia digital.
-      </p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">Lihat Proyek ↓</a>
-        <a href="#contact" class="btn-outline">Kontak Saya</a>
-      </div>
-      <div class="hero-stats">
-        <div class="stat">
-          <div class="stat-num">12+</div>
-          <div class="stat-label">Proyek Selesai</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">5+</div>
-          <div class="stat-label">Sertifikat</div>
-        </div>
-        <div class="stat">
-          <div class="stat-num">3th</div>
-          <div class="stat-label">Belajar TKJ</div>
-        </div>
-      </div>
-    </div>
 
-    <!-- Avatar / Foto Profil -->
-    <div class="hero-visual">
-      <div class="avatar-container">
-        <div class="avatar-glow"></div>
-        <div class="avatar-ring"></div>
-        <div class="avatar-img">
-          <!--
-            CARA GANTI FOTO:
-            Hapus tag <svg> di bawah ini, ganti dengan:
-            <img src="foto-kamu.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
-          -->
-          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
-                <stop offset="0%" stop-color="#1a0533"/>
-                <stop offset="100%" stop-color="#04050f"/>
-              </radialGradient>
-              <linearGradient id="skinGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#c8834a"/>
-                <stop offset="100%" stop-color="#a0602a"/>
-              </linearGradient>
-              <linearGradient id="shirtGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#7b2ff7"/>
-                <stop offset="100%" stop-color="#0ff0fc"/>
-              </linearGradient>
-              <linearGradient id="hairGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#1a0a00"/>
-                <stop offset="100%" stop-color="#3d1f00"/>
-              </linearGradient>
-            </defs>
-            <circle cx="100" cy="100" r="100" fill="url(#bgGrad)"/>
-            <path d="M50 200 Q50 145 75 138 L100 150 L125 138 Q150 145 150 200Z" fill="url(#shirtGrad)"/>
-            <rect x="88" y="118" width="24" height="22" rx="5" fill="url(#skinGrad)"/>
-            <ellipse cx="100" cy="98" rx="36" ry="38" fill="url(#skinGrad)"/>
-            <path d="M66 90 Q68 58 100 55 Q132 58 134 90 Q126 60 100 62 Q74 60 66 90Z" fill="url(#hairGrad)"/>
-            <path d="M65 90 Q62 110 68 122 Q65 108 66 90Z" fill="url(#hairGrad)"/>
-            <path d="M135 90 Q138 110 132 122 Q135 108 134 90Z" fill="url(#hairGrad)"/>
-            <ellipse cx="64" cy="100" rx="7" ry="9" fill="url(#skinGrad)"/>
-            <ellipse cx="136" cy="100" rx="7" ry="9" fill="url(#skinGrad)"/>
-            <ellipse cx="87" cy="96" rx="7" ry="8" fill="#1a0a00"/>
-            <ellipse cx="113" cy="96" rx="7" ry="8" fill="#1a0a00"/>
-            <circle cx="89" cy="94" r="2.5" fill="white" opacity="0.7"/>
-            <circle cx="115" cy="94" r="2.5" fill="white" opacity="0.7"/>
-            <path d="M80 86 Q87 82 94 85" stroke="#1a0a00" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M106 85 Q113 82 120 86" stroke="#1a0a00" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <path d="M98 103 Q100 112 102 103" stroke="#7a4010" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <path d="M88 116 Q100 125 112 116" stroke="#7a4010" stroke-width="2.5" stroke-linecap="round" fill="none"/>
-            <rect x="79" y="89" width="17" height="14" rx="4" stroke="#0ff0fc" stroke-width="1.5" fill="rgba(0,240,252,0.05)"/>
-            <rect x="104" y="89" width="17" height="14" rx="4" stroke="#0ff0fc" stroke-width="1.5" fill="rgba(0,240,252,0.05)"/>
-            <line x1="96" y1="96" x2="104" y2="96" stroke="#0ff0fc" stroke-width="1.5"/>
-            <path d="M88 138 L100 152 L112 138 L100 148Z" fill="#5a20c0"/>
-          </svg>
-        </div>
+      <!-- Subtitle -->
+      <p class="hero-sub">
+        Siswa SMK Jurusan Teknik Komputer &amp; Jaringan yang passionate dalam pengembangan web modern dan administrasi jaringan komputer.
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="hero-cta">
+        <a href="#projects" class="el-btn el-btn-primary">🚀 Lihat Proyek Saya</a>
+        <a href="#contact"  class="el-btn el-btn-secondary">💬 Hubungi Saya</a>
       </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        <span>scroll</span>
+      </div>
+
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!-- ============================================================
+       ABOUT SECTION
+       ============================================================ -->
+  <div class="divider"></div>
+  <section id="about">
+    <div class="about-grid fade-up">
+
+      <!-- Visual Card -->
+      <div class="about-visual">
+        <div class="about-card-main el-card el-card-glow">
+          <div class="about-avatar-lg">R</div>
+          <div class="about-name">Nuhshon</div>
+          <div class="about-role">Siswa SMK TKJ · Kelas XI TKJ 1</div>
+          <div style="display:flex; gap:0.5rem; flex-wrap:wrap; margin-bottom:0.5rem">
+            <span class="el-badge el-badge-aurora" style="font-size:0.7rem">TKJ</span>
+            <span class="el-badge el-badge-cyan"   style="font-size:0.7rem">Web Dev</span>
+            <span class="el-badge el-badge-green"  style="font-size:0.7rem">Networking</span>
+          </div>
+          <div class="about-stats">
+            <div class="stat-item">
+              <span class="stat-num">5+</span>
+              <span class="stat-label">Proyek</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Sertifikat</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Tahun</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-floating">
+          <span>🟢</span>
+          <span style="font-size:0.8rem; color: var(--text-secondary)">Tersedia untuk proyek</span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content">
+        <h2>Passion di <span class="gradient-text">Teknologi &amp; Jaringan</span></h2>
+        <p>
+          Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang antusias dalam dunia teknologi. Selama 3 tahun belajar di SMK, saya telah menguasai berbagai skill mulai dari administrasi jaringan hingga pengembangan web modern.
+        </p>
+        <p>
+          Saya percaya bahwa belajar tidak harus menunggu kuliah — setiap hari adalah kesempatan untuk grow dan build sesuatu yang bermakna.
+        </p>
+
+        <ul class="about-list">
+          <li>
+            <span>✓</span>
+            <span>Menguasai konfigurasi router, switch, dan firewall (Cisco, MikroTik)</span>
+          </li>
+          <li>
+            <span>✓</span>
+            <span>Pengembangan web dengan HTML, CSS, JavaScript, dan PHP</span>
+          </li>
+          <li>
+            <span>✓</span>
+            <span>Pengalaman PKL di perusahaan IT selama 6 bulan</span>
+          </li>
+          <li>
+            <span>✓</span>
+            <span>Juara 2 LKS Networking tingkat kabupaten</span>
+          </li>
+        </ul>
+
+        <div style="display:flex; gap:1rem; flex-wrap:wrap; margin-top:1.5rem">
+          <a href="#contact" class="el-btn el-btn-primary">📩 Kontak Saya</a>
+          <a href="#"        class="el-btn el-btn-secondary">📄 Download CV</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
        SKILLS SECTION
-  ══════════════════════════════════════════ -->
+       ============================================================ -->
+  <div class="divider"></div>
   <section id="skills">
-    <div class="section-eyebrow">Keahlian</div>
-    <h2 class="section-title">Apa yang Saya Kuasai</h2>
-    <p class="section-desc">Stack teknis yang saya pelajari selama di SMK TKJ — dari jaringan hingga pengembangan web.</p>
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">✦ Keahlian</span>
+      <h2 class="section-title">Tech Stack &amp; <span class="gradient-text">Kemampuan</span></h2>
+      <p class="section-desc">Berbagai keahlian yang saya pelajari selama di SMK TKJ, dari jaringan hingga pengembangan web.</p>
+    </div>
 
     <div class="skills-grid">
 
-      <div class="skill-card" style="--card-accent: linear-gradient(90deg,#0ff0fc,#43e97b);">
-        <div class="skill-icon" style="--icon-bg: rgba(0,240,252,0.1);">🌐</div>
-        <div class="skill-name">Jaringan Komputer</div>
-        <div class="skill-desc">Konfigurasi routing, switching, VLAN, dan troubleshooting jaringan LAN/WAN menggunakan Cisco Packet Tracer.</div>
+      <!-- Network Engineering -->
+      <div class="el-card skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(14,165,233,0.15); color:#7dd3fc">🌐</div>
+        <div class="skill-title">Network Engineering</div>
+        <div class="skill-desc">Konfigurasi dan administrasi jaringan komputer menggunakan perangkat Cisco dan MikroTik.</div>
         <div class="skill-bar-wrap">
-          <div class="skill-bar" style="--pct:85%; --bar-color: linear-gradient(90deg,#0ff0fc,#43e97b);"></div>
+          <div class="skill-bar" style="width:88%; background:linear-gradient(to right,#0ea5e9,#38bdf8)"></div>
         </div>
-        <div class="skill-pct">85%</div>
+        <div class="skill-level">88% — Mahir</div>
+        <div class="skill-tags">
+          <span class="el-tag">Cisco</span>
+          <span class="el-tag">MikroTik</span>
+          <span class="el-tag">VLAN</span>
+          <span class="el-tag">Firewall</span>
+          <span class="el-tag">VPN</span>
+        </div>
       </div>
 
-      <div class="skill-card" style="--card-accent: linear-gradient(90deg,#7b2ff7,#f72585);">
-        <div class="skill-icon" style="--icon-bg: rgba(123,47,247,0.12);">💻</div>
-        <div class="skill-name">Web Development</div>
-        <div class="skill-desc">HTML5, CSS3, JavaScript dasar hingga menengah. Membuat tampilan responsif dan interaktif untuk web modern.</div>
+      <!-- Web Development -->
+      <div class="el-card skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(139,92,246,0.15); color:#c4b5fd">💻</div>
+        <div class="skill-title">Web Development</div>
+        <div class="skill-desc">Membangun website responsif dan modern menggunakan teknologi frontend dan backend terkini.</div>
         <div class="skill-bar-wrap">
-          <div class="skill-bar" style="--pct:78%; --bar-color: linear-gradient(90deg,#7b2ff7,#f72585);"></div>
+          <div class="skill-bar" style="width:80%"></div>
         </div>
-        <div class="skill-pct">78%</div>
+        <div class="skill-level">80% — Menengah</div>
+        <div class="skill-tags">
+          <span class="el-tag">HTML</span>
+          <span class="el-tag">CSS</span>
+          <span class="el-tag">JavaScript</span>
+          <span class="el-tag">PHP</span>
+          <span class="el-tag">MySQL</span>
+        </div>
       </div>
 
-      <div class="skill-card" style="--card-accent: linear-gradient(90deg,#f72585,#fa8231);">
-        <div class="skill-icon" style="--icon-bg: rgba(247,37,133,0.1);">🛡️</div>
-        <div class="skill-name">Keamanan Siber</div>
-        <div class="skill-desc">Dasar-dasar cybersecurity, firewall, enkripsi, dan keamanan jaringan. Mempelajari etika hacking dan perlindungan sistem.</div>
+      <!-- Linux Administration -->
+      <div class="el-card skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(234,179,8,0.15); color:#fde047">🐧</div>
+        <div class="skill-title">Linux Administration</div>
+        <div class="skill-desc">Instalasi, konfigurasi, dan administrasi server berbasis Linux Ubuntu dan Debian.</div>
         <div class="skill-bar-wrap">
-          <div class="skill-bar" style="--pct:65%; --bar-color: linear-gradient(90deg,#f72585,#fa8231);"></div>
+          <div class="skill-bar" style="width:75%; background:linear-gradient(to right,#eab308,#facc15)"></div>
         </div>
-        <div class="skill-pct">65%</div>
+        <div class="skill-level">75% — Menengah</div>
+        <div class="skill-tags">
+          <span class="el-tag">Ubuntu</span>
+          <span class="el-tag">Debian</span>
+          <span class="el-tag">SSH</span>
+          <span class="el-tag">Apache</span>
+          <span class="el-tag">Nginx</span>
+        </div>
       </div>
 
-      <div class="skill-card" style="--card-accent: linear-gradient(90deg,#43e97b,#38f9d7);">
-        <div class="skill-icon" style="--icon-bg: rgba(67,233,123,0.1);">🖥️</div>
-        <div class="skill-name">Linux &amp; Server</div>
-        <div class="skill-desc">Instalasi dan konfigurasi server Linux (Ubuntu/Debian), manajemen file, user, dan layanan web server Apache/Nginx.</div>
+      <!-- Network Security -->
+      <div class="el-card skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(236,72,153,0.15); color:#f9a8d4">🔒</div>
+        <div class="skill-title">Network Security</div>
+        <div class="skill-desc">Pemahaman dasar keamanan jaringan, deteksi ancaman, dan implementasi protokol keamanan.</div>
         <div class="skill-bar-wrap">
-          <div class="skill-bar" style="--pct:72%; --bar-color: linear-gradient(90deg,#43e97b,#38f9d7);"></div>
+          <div class="skill-bar" style="width:70%; background:linear-gradient(to right,#ec4899,#f472b6)"></div>
         </div>
-        <div class="skill-pct">72%</div>
+        <div class="skill-level">70% — Berkembang</div>
+        <div class="skill-tags">
+          <span class="el-tag">ACL</span>
+          <span class="el-tag">IDS/IPS</span>
+          <span class="el-tag">SSL/TLS</span>
+          <span class="el-tag">Wireshark</span>
+        </div>
       </div>
 
-      <div class="skill-card" style="--card-accent: linear-gradient(90deg,#38f9d7,#0ff0fc);">
-        <div class="skill-icon" style="--icon-bg: rgba(56,249,215,0.1);">🗄️</div>
-        <div class="skill-name">Database (MySQL)</div>
-        <div class="skill-desc">Desain dan manajemen database relasional, query SQL dasar hingga menengah, CRUD, dan normalisasi data.</div>
+      <!-- Database Management -->
+      <div class="el-card skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(34,197,94,0.15); color:#86efac">🗄️</div>
+        <div class="skill-title">Database Management</div>
+        <div class="skill-desc">Desain dan manajemen database relasional untuk aplikasi web dan sistem informasi.</div>
         <div class="skill-bar-wrap">
-          <div class="skill-bar" style="--pct:68%; --bar-color: linear-gradient(90deg,#38f9d7,#0ff0fc);"></div>
+          <div class="skill-bar" style="width:72%; background:linear-gradient(to right,#22c55e,#4ade80)"></div>
         </div>
-        <div class="skill-pct">68%</div>
+        <div class="skill-level">72% — Menengah</div>
+        <div class="skill-tags">
+          <span class="el-tag">MySQL</span>
+          <span class="el-tag">phpMyAdmin</span>
+          <span class="el-tag">SQL</span>
+          <span class="el-tag">MariaDB</span>
+        </div>
       </div>
 
-      <div class="skill-card" style="--card-accent: linear-gradient(90deg,#fa8231,#f72585);">
-        <div class="skill-icon" style="--icon-bg: rgba(250,130,49,0.1);">📱</div>
-        <div class="skill-name">Troubleshooting Hardware</div>
-        <div class="skill-desc">Perakitan PC, diagnosa kerusakan hardware, upgrade komponen, dan perbaikan perangkat komputer serta laptop.</div>
+      <!-- Virtualisasi & Cloud -->
+      <div class="el-card skill-card fade-up">
+        <div class="skill-icon" style="background:rgba(6,182,212,0.15); color:#67e8f9">☁️</div>
+        <div class="skill-title">Virtualisasi &amp; Cloud</div>
+        <div class="skill-desc">Penggunaan teknologi virtualisasi untuk lab jaringan dan simulasi infrastruktur IT.</div>
         <div class="skill-bar-wrap">
-          <div class="skill-bar" style="--pct:80%; --bar-color: linear-gradient(90deg,#fa8231,#f72585);"></div>
+          <div class="skill-bar" style="width:65%; background:linear-gradient(to right,#06b6d4,#22d3ee)"></div>
         </div>
-        <div class="skill-pct">80%</div>
+        <div class="skill-level">65% — Berkembang</div>
+        <div class="skill-tags">
+          <span class="el-tag">VirtualBox</span>
+          <span class="el-tag">VMware</span>
+          <span class="el-tag">GNS3</span>
+          <span class="el-tag">Packet Tracer</span>
+        </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!-- ============================================================
        PROJECTS SECTION
-  ══════════════════════════════════════════ -->
+       ============================================================ -->
+  <div class="divider"></div>
   <section id="projects">
-    <div class="section-eyebrow">Portofolio</div>
-    <h2 class="section-title">Proyek Pilihan</h2>
-    <p class="section-desc">Beberapa proyek yang telah saya kerjakan selama belajar di SMK.</p>
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">✦ Portofolio</span>
+      <h2 class="section-title">Proyek <span class="gradient-text">Unggulan</span></h2>
+      <p class="section-desc">Beberapa proyek yang telah saya kerjakan selama belajar di SMK TKJ.</p>
+    </div>
 
     <div class="projects-grid">
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: linear-gradient(135deg,#0d0d2b 0%,#1a0533 50%,#0a1a2b 100%);">
-          <div class="project-thumb-inner">🌐</div>
-          <div style="position:absolute;inset:0;background:radial-gradient(circle at 60% 40%,rgba(0,240,252,0.15),transparent 60%);"></div>
-        </div>
+      <!-- Project 1 -->
+      <div class="el-card project-card fade-up" style="padding:0">
+        <div class="project-thumb p-thumb-1">🏫</div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-cyan">HTML</span>
-            <span class="tag tag-purple">CSS</span>
-            <span class="tag tag-pink">JavaScript</span>
+          <div class="project-type">
+            <span class="el-badge el-badge-aurora" style="font-size:0.68rem">Web App</span>
           </div>
-          <div class="project-title">Website Sekolah SMK TKJ</div>
-          <p class="project-desc">Website profil sekolah responsif dengan fitur galeri, jadwal pelajaran, dan halaman berita. Dibuat sebagai tugas akhir mata pelajaran Pemrograman Web.</p>
-          <a href="#" class="project-link">Lihat Detail
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="project-title">Sistem Informasi Perpustakaan SMK</div>
+          <div class="project-desc">Website manajemen perpustakaan dengan fitur peminjaman buku, katalog online, dan laporan bulanan menggunakan PHP &amp; MySQL.</div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="el-tag">PHP</span>
+              <span class="el-tag">MySQL</span>
+              <span class="el-tag">Bootstrap</span>
+            </div>
+            <a href="#" class="project-link">↗</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: linear-gradient(135deg,#0a1a0d 0%,#0d2b1a 50%,#051a10 100%);">
-          <div class="project-thumb-inner">🔧</div>
-          <div style="position:absolute;inset:0;background:radial-gradient(circle at 40% 60%,rgba(67,233,123,0.15),transparent 60%);"></div>
-        </div>
+      <!-- Project 2 -->
+      <div class="el-card project-card fade-up" style="padding:0">
+        <div class="project-thumb p-thumb-2">🌐</div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-green">Cisco</span>
-            <span class="tag tag-cyan">Packet Tracer</span>
+          <div class="project-type">
+            <span class="el-badge el-badge-cyan" style="font-size:0.68rem">Jaringan</span>
           </div>
-          <div class="project-title">Simulasi Jaringan VLAN</div>
-          <p class="project-desc">Simulasi topologi jaringan perusahaan dengan segmentasi VLAN, inter-VLAN routing, dan konfigurasi DHCP server menggunakan Cisco Packet Tracer.</p>
-          <a href="#" class="project-link">Lihat Detail
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="project-title">Konfigurasi VLAN &amp; Inter-VLAN Routing</div>
+          <div class="project-desc">Implementasi jaringan VLAN untuk lab komputer sekolah dengan konfigurasi switch Cisco Catalyst dan router-on-a-stick.</div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="el-tag">Cisco</span>
+              <span class="el-tag">VLAN</span>
+              <span class="el-tag">GNS3</span>
+            </div>
+            <a href="#" class="project-link">↗</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: linear-gradient(135deg,#1a0a0a 0%,#2b0d0d 50%,#1a050a 100%);">
-          <div class="project-thumb-inner">🛡️</div>
-          <div style="position:absolute;inset:0;background:radial-gradient(circle at 50% 30%,rgba(247,37,133,0.15),transparent 60%);"></div>
-        </div>
+      <!-- Project 3 -->
+      <div class="el-card project-card fade-up" style="padding:0">
+        <div class="project-thumb p-thumb-3">📱</div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-pink">Python</span>
-            <span class="tag tag-orange">Security</span>
+          <div class="project-type">
+            <span class="el-badge el-badge-pink" style="font-size:0.68rem">Frontend</span>
           </div>
-          <div class="project-title">Port Scanner Sederhana</div>
-          <p class="project-desc">Tools keamanan jaringan berbasis Python untuk scanning port terbuka pada host target. Dibuat untuk belajar konsep dasar network security.</p>
-          <a href="#" class="project-link">Lihat Detail
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="project-title">Landing Page Toko Online Modern</div>
+          <div class="project-desc">Website e-commerce responsif dengan desain modern, animasi CSS, dan tampilan menarik untuk pemasaran produk UMKM lokal.</div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="el-tag">HTML</span>
+              <span class="el-tag">CSS</span>
+              <span class="el-tag">JS</span>
+            </div>
+            <a href="#" class="project-link">↗</a>
+          </div>
         </div>
       </div>
 
-      <div class="project-card">
-        <div class="project-thumb" style="background: linear-gradient(135deg,#0a0a1a 0%,#120d2b 50%,#0a0f1a 100%);">
-          <div class="project-thumb-inner">📦</div>
-          <div style="position:absolute;inset:0;background:radial-gradient(circle at 70% 50%,rgba(123,47,247,0.15),transparent 60%);"></div>
-        </div>
+      <!-- Project 4 -->
+      <div class="el-card project-card fade-up" style="padding:0">
+        <div class="project-thumb p-thumb-4">🔧</div>
         <div class="project-body">
-          <div class="project-tags">
-            <span class="tag tag-purple">PHP</span>
-            <span class="tag tag-cyan">MySQL</span>
-            <span class="tag tag-green">Bootstrap</span>
+          <div class="project-type">
+            <span class="el-badge el-badge-green" style="font-size:0.68rem">Server</span>
           </div>
-          <div class="project-title">Sistem Inventaris Sekolah</div>
-          <p class="project-desc">Aplikasi web untuk manajemen inventaris barang laboratorium sekolah. Fitur CRUD, laporan PDF, dan autentikasi pengguna berbasis PHP &amp; MySQL.</p>
-          <a href="#" class="project-link">Lihat Detail
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </a>
+          <div class="project-title">Web Server Ubuntu dengan Nginx</div>
+          <div class="project-desc">Setup dan konfigurasi web server production-ready di Ubuntu 22.04 dengan Nginx, SSL Let's Encrypt, dan PHP-FPM.</div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="el-tag">Ubuntu</span>
+              <span class="el-tag">Nginx</span>
+              <span class="el-tag">SSL</span>
+            </div>
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="el-card project-card fade-up" style="padding:0">
+        <div class="project-thumb p-thumb-5">🔐</div>
+        <div class="project-body">
+          <div class="project-type">
+            <span class="el-badge el-badge-pink" style="font-size:0.68rem">Security</span>
+          </div>
+          <div class="project-title">Implementasi Firewall MikroTik</div>
+          <div class="project-desc">Konfigurasi firewall rules, NAT masquerade, dan address list di MikroTik RouterOS untuk keamanan jaringan kantor kecil.</div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="el-tag">MikroTik</span>
+              <span class="el-tag">Firewall</span>
+              <span class="el-tag">NAT</span>
+            </div>
+            <a href="#" class="project-link">↗</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="el-card project-card fade-up" style="padding:0">
+        <div class="project-thumb p-thumb-6">📊</div>
+        <div class="project-body">
+          <div class="project-type">
+            <span class="el-badge el-badge-aurora" style="font-size:0.68rem">Full Stack</span>
+          </div>
+          <div class="project-title">Aplikasi Absensi Siswa Digital</div>
+          <div class="project-desc">Sistem absensi berbasis web dengan QR Code scanner, laporan real-time, dan notifikasi ke orang tua melalui WhatsApp API.</div>
+          <div class="project-footer">
+            <div class="project-stack">
+              <span class="el-tag">PHP</span>
+              <span class="el-tag">QR Code</span>
+              <span class="el-tag">API</span>
+            </div>
+            <a href="#" class="project-link">↗</a>
+          </div>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
+  <!-- ============================================================
        CERTIFICATES SECTION
-  ══════════════════════════════════════════ -->
+       ============================================================ -->
+  <div class="divider"></div>
   <section id="certificates">
-    <div class="section-eyebrow">Pencapaian</div>
-    <h2 class="section-title">Sertifikat &amp; Penghargaan</h2>
-    <p class="section-desc">Sertifikat yang telah saya raih dari berbagai pelatihan dan kompetisi.</p>
+    <div class="section-header fade-up">
+      <span class="section-eyebrow">✦ Prestasi</span>
+      <h2 class="section-title">Sertifikat &amp; <span class="gradient-text">Penghargaan</span></h2>
+      <p class="section-desc">Pencapaian yang saya raih selama perjalanan belajar di dunia teknologi.</p>
+    </div>
 
-    <div class="cert-list">
-      <div class="cert-item">
-        <div class="cert-icon">🏆</div>
-        <div class="cert-info">
-          <div class="cert-name">Cisco Certified Network Associate (CCNA) — Routing &amp; Switching Essentials</div>
-          <div class="cert-issuer">Cisco Networking Academy</div>
-        </div>
-        <div class="cert-year">2024</div>
+    <div class="cert-grid">
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(255,165,0,0.15)">🏆</div>
+        <div class="cert-org">LKS SMK Kabupaten · 2024</div>
+        <div class="cert-name">Juara 2 Lomba Kompetensi Siswa Bidang IT Network</div>
+        <div class="cert-year">Dinas Pendidikan Kabupaten</div>
+        <span class="el-badge el-badge-aurora" style="font-size:0.68rem; width:fit-content">Prestasi</span>
       </div>
-      <div class="cert-item">
-        <div class="cert-icon">🥇</div>
-        <div class="cert-info">
-          <div class="cert-name">Juara 2 LKS Bidang IT Network Systems Administration</div>
-          <div class="cert-issuer">Lomba Kompetensi Siswa Tingkat Kabupaten</div>
-        </div>
-        <div class="cert-year">2024</div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(14,165,233,0.15)">📜</div>
+        <div class="cert-org">Cisco Networking Academy · 2023</div>
+        <div class="cert-name">CCNA: Introduction to Networks</div>
+        <div class="cert-year">Cisco Systems, Inc.</div>
+        <span class="el-badge el-badge-cyan" style="font-size:0.68rem; width:fit-content">Sertifikasi</span>
       </div>
-      <div class="cert-item">
-        <div class="cert-icon">📜</div>
-        <div class="cert-info">
-          <div class="cert-name">Web Design &amp; Development Fundamentals</div>
-          <div class="cert-issuer">Dicoding Indonesia</div>
-        </div>
-        <div class="cert-year">2023</div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(139,92,246,0.15)">🎓</div>
+        <div class="cert-org">Google · 2023</div>
+        <div class="cert-name">Google IT Support Professional Certificate</div>
+        <div class="cert-year">Coursera × Google</div>
+        <span class="el-badge el-badge-aurora" style="font-size:0.68rem; width:fit-content">Sertifikasi</span>
       </div>
-      <div class="cert-item">
-        <div class="cert-icon">🔐</div>
-        <div class="cert-info">
-          <div class="cert-name">Introduction to Cybersecurity</div>
-          <div class="cert-issuer">Cisco Networking Academy</div>
-        </div>
-        <div class="cert-year">2023</div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(236,72,153,0.15)">🌐</div>
+        <div class="cert-org">Dicoding Indonesia · 2024</div>
+        <div class="cert-name">Belajar Dasar Pemrograman Web</div>
+        <div class="cert-year">Dicoding Academy</div>
+        <span class="el-badge el-badge-pink" style="font-size:0.68rem; width:fit-content">Kursus</span>
       </div>
-      <div class="cert-item">
-        <div class="cert-icon">🐧</div>
-        <div class="cert-info">
-          <div class="cert-name">Linux Essentials Certificate</div>
-          <div class="cert-issuer">NDG Linux Essentials — Cisco</div>
-        </div>
-        <div class="cert-year">2023</div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(34,197,94,0.15)">🔧</div>
+        <div class="cert-org">MikroTik · 2024</div>
+        <div class="cert-name">MikroTik Certified Network Associate (MTCNA)</div>
+        <div class="cert-year">MikroTik</div>
+        <span class="el-badge el-badge-green" style="font-size:0.68rem; width:fit-content">Sertifikasi</span>
       </div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(6,182,212,0.15)">⭐</div>
+        <div class="cert-org">Sekolah · 2023 &amp; 2024</div>
+        <div class="cert-name">Siswa Berprestasi Jurusan TKJ 2 Tahun Berturut-turut</div>
+        <div class="cert-year">SMK Negeri / Swasta</div>
+        <span class="el-badge el-badge-cyan" style="font-size:0.68rem; width:fit-content">Prestasi</span>
+      </div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(168,85,247,0.15)">🛡️</div>
+        <div class="cert-org">Kominfo · 2024</div>
+        <div class="cert-name">Digital Talent Scholarship — Junior Network Administrator</div>
+        <div class="cert-year">Kementerian Kominfo RI</div>
+        <span class="el-badge el-badge-aurora" style="font-size:0.68rem; width:fit-content">Beasiswa</span>
+      </div>
+
+      <div class="el-card cert-card fade-up">
+        <div class="cert-icon" style="background:rgba(249,115,22,0.15)">💼</div>
+        <div class="cert-org">PKL · 2023</div>
+        <div class="cert-name">Sertifikat Praktik Kerja Lapangan — PT. XYZ Technology</div>
+        <div class="cert-year">Perusahaan IT Lokal</div>
+        <span class="el-badge el-badge-pink" style="font-size:0.68rem; width:fit-content">Pengalaman</span>
+      </div>
+
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════
-       ABOUT SECTION
-  ══════════════════════════════════════════ -->
-  <section id="about">
-    <div class="about-img-wrap">
-      <div class="about-card">
-        <div class="about-avatar">
-          <!--
-            CARA GANTI FOTO:
-            Hapus tag <svg> di bawah, ganti dengan:
-            <img src="foto-kamu.jpg" style="width:100%;height:100%;object-fit:cover;border-radius:50%;">
-          -->
-          <svg viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" width="100" height="100">
-            <defs>
-              <linearGradient id="skin2" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#c8834a"/>
-                <stop offset="100%" stop-color="#a0602a"/>
-              </linearGradient>
-              <linearGradient id="shirt2" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#7b2ff7"/>
-                <stop offset="100%" stop-color="#0ff0fc"/>
-              </linearGradient>
-            </defs>
-            <circle cx="60" cy="60" r="60" fill="#110822"/>
-            <path d="M20 120 Q20 84 38 80 L60 90 L82 80 Q100 84 100 120Z" fill="url(#shirt2)"/>
-            <rect x="51" y="68" width="18" height="14" rx="4" fill="url(#skin2)"/>
-            <ellipse cx="60" cy="56" rx="22" ry="24" fill="url(#skin2)"/>
-            <path d="M38 50 Q40 32 60 30 Q80 32 82 50 Q76 34 60 36 Q44 34 38 50Z" fill="#1a0a00"/>
-            <ellipse cx="50" cy="55" rx="5" ry="6" fill="#1a0a00"/>
-            <ellipse cx="70" cy="55" rx="5" ry="6" fill="#1a0a00"/>
-            <circle cx="51.5" cy="53.5" r="1.8" fill="white" opacity="0.7"/>
-            <circle cx="71.5" cy="53.5" r="1.8" fill="white" opacity="0.7"/>
-            <path d="M55 66 Q60 72 65 66" stroke="#7a4010" stroke-width="2" stroke-linecap="round" fill="none"/>
-            <rect x="44" y="50" width="12" height="9" rx="3" stroke="#0ff0fc" stroke-width="1.2" fill="rgba(0,240,252,0.05)"/>
-            <rect x="64" y="50" width="12" height="9" rx="3" stroke="#0ff0fc" stroke-width="1.2" fill="rgba(0,240,252,0.05)"/>
-            <line x1="56" y1="54.5" x2="64" y2="54.5" stroke="#0ff0fc" stroke-width="1.2"/>
-          </svg>
-        </div>
-        <div class="about-name">Nuhshon</div>
-        <div class="about-role">Siswa SMK TKJ · Tech Enthusiast</div>
-        <div class="about-detail"><span>🏫</span><span>SMK Teknik Komputer &amp; Jaringan</span></div>
-        <div class="about-detail"><span>📍</span><span>Indonesia</span></div>
-        <div class="about-detail"><span>🎓</span><span>Kelas XII TKJ</span></div>
-        <div class="about-detail"><span>✉️</span><span>nuhshon@email.com</span></div>
-        <hr class="about-divider"/>
-        <div class="social-row">
-          <a href="#" class="social-btn" title="GitHub">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.1.82-.26.82-.58v-2.02c-3.34.73-4.04-1.6-4.04-1.6-.54-1.38-1.33-1.74-1.33-1.74-1.08-.74.08-.73.08-.73 1.2.08 1.83 1.23 1.83 1.23 1.07 1.83 2.8 1.3 3.49 1 .1-.77.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.3.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 016 0C17 4.38 18 4.7 18 4.7c.64 1.66.24 2.88.12 3.18.77.84 1.23 1.92 1.23 3.22 0 4.61-2.8 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.3c0 .32.22.69.83.57C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
-          </a>
-          <a href="#" class="social-btn" title="LinkedIn">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.55V9H3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.72V1.72C24 .77 23.21 0 22.23 0z"/></svg>
-          </a>
-          <a href="#" class="social-btn" title="Instagram">
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.58.01 4.84.07 3.25.15 4.77 1.69 4.92 4.92.06 1.26.07 1.64.07 4.84 0 3.2-.01 3.58-.07 4.84-.15 3.23-1.66 4.77-4.92 4.92-1.26.06-1.63.07-4.84.07-3.2 0-3.58-.01-4.84-.07-3.26-.15-4.77-1.7-4.92-4.92C2.21 15.58 2.2 15.2 2.2 12c0-3.2.01-3.58.07-4.84C2.42 3.88 3.94 2.35 7.16 2.27 8.42 2.21 8.8 2.2 12 2.2zM12 0C8.74 0 8.33.01 7.05.07 2.7.27.27 2.7.07 7.05.01 8.33 0 8.74 0 12c0 3.26.01 3.67.07 4.95.2 4.36 2.62 6.78 6.98 6.98C8.33 23.99 8.74 24 12 24c3.26 0 3.67-.01 4.95-.07 4.35-.2 6.78-2.62 6.98-6.98.06-1.28.07-1.69.07-4.95 0-3.26-.01-3.67-.07-4.95C23.73 2.7 21.3.27 16.95.07 15.67.01 15.26 0 12 0zm0 5.84a6.16 6.16 0 100 12.32A6.16 6.16 0 0012 5.84zM12 16a4 4 0 110-8 4 4 0 010 8zm6.4-11.85a1.44 1.44 0 100 2.88 1.44 1.44 0 000-2.88z"/></svg>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="about-text">
-      <div class="section-eyebrow">Tentang Saya</div>
-      <h2 class="section-title">Cerita di Balik Layar</h2>
-      <p class="section-desc">
-        Saya adalah siswa SMK jurusan Teknik Komputer dan Jaringan (TKJ) yang
-        memiliki semangat tinggi dalam dunia teknologi. Sejak duduk di bangku
-        sekolah, saya sudah jatuh cinta dengan jaringan komputer, web development,
-        dan keamanan siber.
-      </p>
-      <p class="section-desc" style="margin-top: 16px;">
-        Saya percaya bahwa belajar tidak berhenti di kelas — setiap proyek
-        adalah petualangan baru untuk berkembang. Impian saya adalah menjadi
-        seorang <strong>Network Engineer</strong> atau <strong>Cybersecurity Specialist</strong>
-        yang bisa berkontribusi membangun infrastruktur digital Indonesia.
-      </p>
-      <div class="info-grid">
-        <div class="info-item">
-          <div class="info-label">Nama Lengkap</div>
-          <div class="info-val">Nuhshon</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Jurusan</div>
-          <div class="info-val">TKJ (Teknik Komputer &amp; Jaringan)</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Status</div>
-          <div class="info-val">Siswa Aktif SMK</div>
-        </div>
-        <div class="info-item">
-          <div class="info-label">Minat Karir</div>
-          <div class="info-val">Network / Cybersecurity</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ══════════════════════════════════════
+  <!-- ============================================================
        CONTACT SECTION
-  ══════════════════════════════════════════ -->
-  <section id="contact" style="text-align:center;">
-    <div class="section-eyebrow" style="justify-content:center;">Kontak</div>
-    <h2 class="section-title">Mari Berkolaborasi! 🚀</h2>
-    <div class="contact-box">
-      <p>Saya terbuka untuk diskusi proyek, magang, atau sekadar ngobrol soal teknologi. Jangan ragu untuk menghubungi saya melalui media di bawah ini!</p>
-      <div class="contact-row">
-        <a href="mailto:nuhshon@email.com" class="contact-chip">📧 Email Saya</a>
-        <a href="#" class="contact-chip">💼 LinkedIn</a>
-        <a href="#" class="contact-chip">🐙 GitHub</a>
-        <a href="#" class="contact-chip">📸 Instagram</a>
+       ============================================================ -->
+  <div class="divider"></div>
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-grid fade-up">
+
+        <!-- Info -->
+        <div class="contact-info">
+          <span class="section-eyebrow">✦ Kontak</span>
+          <h2>Mari <span class="gradient-text">Terhubung</span> Bersama</h2>
+          <p>
+            Tertarik untuk berkolaborasi, punya pertanyaan, atau sekadar ingin ngobrol soal teknologi? Saya selalu terbuka untuk diskusi dan peluang baru!
+          </p>
+          <div class="contact-links">
+            <a href="nuhshonalkhoir@gmail.com" class="contact-link-item">
+              <div class="contact-link-icon" style="background:rgba(139,92,246,0.15); font-size:1.1rem">📧</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.1rem">Email</div>
+                <div style="font-weight:500">nuhshonalkhoir@gmail.com</div>
+              </div>
+            </a>
+            <a href="https://wa.me/6283139690161" class="contact-link-item">
+              <div class="contact-link-icon" style="background:rgba(34,197,94,0.15); font-size:1.1rem">📱</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.1rem">WhatsApp</div>
+                <div style="font-weight:500">+62 831-3969-0161</div>
+              </div>
+            </a>
+            <a href="https://github.com/nuhshonalkhoir-cmyk" class="contact-link-item">
+              <div class="contact-link-icon" style="background:rgba(255,255,255,0.08); font-size:1.1rem">🐙</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.1rem">GitHub</div>
+                <div style="font-weight:500">nuhshonalkhoir-cmyk/testing.host</div>
+              </div>
+            </a>
+            <a href="https://linkedin.com/in/nuhshon" class="contact-link-item">
+              <div class="contact-link-icon" style="background:rgba(14,165,233,0.15); font-size:1.1rem">💼</div>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-muted); margin-bottom:0.1rem">LinkedIn</div>
+                <div style="font-weight:500">nuhshon</div>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="el-card el-card-glow">
+          <h3 style="font-family:var(--font-display); font-size:1.15rem; font-weight:700; margin-bottom:1.5rem">
+            Kirim Pesan 📩
+          </h3>
+          <div class="el-form">
+            <div class="el-field">
+              <label class="el-label">Nama Lengkap</label>
+              <input type="text" class="el-input" data-field="name" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="el-field">
+              <label class="el-label">Email</label>
+              <input type="email" class="el-input" data-field="email" placeholder="email@example.com">
+            </div>
+            <div class="el-field">
+              <label class="el-label">Subjek</label>
+              <input type="text" class="el-input" data-field="subject" placeholder="Tentang apa?">
+            </div>
+             <div class="el-field">
+              <label class="el-label">Pesan</label>
+              <textarea class="el-textarea" data-field="message" placeholder="Tuliskan pesan Anda di sini..."></textarea>
+            </div>
+            <button class="el-btn el-btn-primary send-btn"
+                    style="width:100%; justify-content:center; margin-top:0.25rem"
+                    onclick="sendMessage()">
+              🚀 Kirim Pesan
+            </button>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-</main>
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Nuhshon.</div>
+      <ul class="footer-links">
+        <li><a href="#about">Tentang</a></li>
+        <li><a href="#projects">Proyek</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
+      <div style="font-size:0.78rem; color:var(--text-muted)">
+        Nuhshon · SMK TKJ · Dibuat dengan ❤️ &amp; Aurora UI
+      </div>
+    </div>
+  </footer>
 
-<!-- ─── FOOTER ─── -->
-<footer>
-  <div class="footer-logo">Nuhshon</div>
-  <div>Dibuat dengan ❤️ menggunakan Aurora UI × Eldoura Design System</div>
-  <div>© 2024 — SMK TKJ</div>
-</footer>
+</div><!-- /.wrapper -->
 
-<!-- JavaScript -->
+<!-- Toast Notification -->
+<div class="el-toast" id="toast">
+  <span>✅</span>
+  <span>Pesan berhasil terkirim!</span>
+</div>
+
+<!-- Script JS (load terakhir agar DOM sudah siap) -->
 <script src="script.js"></script>
 
 </body>
